@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <style>
+      #music {
+  display: none;
+  //I have set the image to be invisible when the page loads by default.
+}
+
+    </style>
+<div id="music">
+  <img src="http://www.fumcwl.org/files/69/Pictures/music.jpg">
+</div>
+<p>
+  What subject does Michael Like?
+</p>
+<button onclick="showAnswer()">
+  Show/Hide
+</button>
+  </head>
+  <body>
+    <script>
+function showAnswer() {
+  var image = document.getElementById('music');
+  //I get the contents of the stem ID and save it as the variable image.
+  if (image.style.display === 'block') {
+    //If the display is shown on the screen....
+    image.style.display = 'none';
+    //I make it invisible.
+  } else {
+    image.style.display = 'block';
+    //If it is invisible, I will display it.
+  }
+}
+
+    </script>
+  </body>
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <style>
+    
+      #cermet {
+        float: left;
+      }
+      
+      #corgi {
+        float: right;
+      }
+      
+    </style>
+    <script>
+    
+    function shadowIn() {
+      document.getElementById('cermet').style.boxShadow = "0px 20px 10px black";
+    }
+    
+    function shadowOut() {
+    document.getElementById('cermet').style.boxShadow = "20px 0px 10px black";
+    }
+    
+    function corgiIn() {
+    document.getElementById('corgi').style.boxShadow = "0px 20px 10px black";
+    }
+    
+    function corgiOut() {
+    document.getElementById('corgi').style.boxShadow = "20px 0px 10px black";
+    }
+    
+    </script>
+    
+
+  </head>
+  <body>
+
+  <img width="30%" src="https://pbs.twimg.com/media/CiRsW10UgAAKSpN.jpg" id="cermet" onmouseover="shadowIn()" onmouseout="shadowOut()">
+  
+  <img width="30%" src="https://corgithings.com/wp-content/uploads/2017/04/tumblr_inline_ol3btknmRE1sy8zd3_540.png" id="corgi" onmouseover="corgiIn()" onmouseout="corgiOut()">
+  
+  </body>
+
+</html>
